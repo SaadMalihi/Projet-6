@@ -1,0 +1,17 @@
+footer{
+    background-color: black;
+    
+    color: white;
+
+    & .footerElement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    & img {
+        margin: 20px; 
+        width: 226px;
+    }
+}
