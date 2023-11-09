@@ -13,24 +13,24 @@ function App() {
 const data = getData()
 
     return (
-        <>
-        <Header />
+        
+        
       <div>
         <BrowserRouter>
+        <Header />
           <Routes>
             <Route path='/' element={<Home/> }/>
-
             <Route path='*' element={<Error/>}/>
             <Route path='about' element={<About/>}/>
           {data.map((quoicoubeh) =>
           <Route key={quoicoubeh.id} path={"logement/" + quoicoubeh.id} element={<Lodging />}/>
           )}
-            
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
-        <Footer />
-        </>
+       
+        
       );
   
     ;

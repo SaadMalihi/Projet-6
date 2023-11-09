@@ -1,0 +1,15 @@
+import React from 'react';
+import {Link} from "react-router-dom";
+import "./_card.scss"
+
+const Card = (props) => {
+    return (
+        <Link to={'logement/'+props.id} className='figure' id={props.id}>
+         <div></div>
+         <img src={props.cover} alt={props.title} />
+         <figcaption className='figCaption'>{props.title}</figcaption>   
+        </Link>
+    );
+};
+
+export default Card;

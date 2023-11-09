@@ -1,0 +1,27 @@
+section.lodgingList{
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    width: 90%;
+    height: 100%;
+    margin: 25px 5% 25px 5%;
+    position: relative;
+    flex: 1;
+
+    & .cardsList{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    & .figure{
+        margin-left:3%;
+    }
+
+    & .figCaption{
+        position:absolute;
+        color: white;
+        bottom: 0;
+        left: 0;
+        margin:0 0 10px 10px;
+    }
+}
+
